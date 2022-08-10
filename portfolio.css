@@ -307,13 +307,13 @@ img:hover {
     float:left;
     width:50%;
     padding:1.6%;
-    height:550px;
+    height:570px;
     background-color:lightpink;
 }
 
 .text_column p {
     color:black;
-    font-size:1.70vw;
+    font-size:1.60vw;
     letter-spacing:normal;
 }
 
