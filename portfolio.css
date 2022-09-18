@@ -51,7 +51,7 @@ p {
     color:azure;
     text-align:justify;
     letter-spacing:1vw;
-    font-size:0.8vw;
+    font-size:1vw;
     padding-left:1vw;
     padding-right:1vw;
 }
@@ -322,7 +322,7 @@ img:hover {
     width:50%;
     padding:1.6%;
     padding-top:8%;
-    height:400px;
+    height:500px;
     background-color:lightsteelblue;
 }
 
