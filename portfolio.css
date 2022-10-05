@@ -314,6 +314,7 @@ img:hover {
 .text_column p {
     color:black;
     font-size:1.60vw;
+    font-weight: bold;
     letter-spacing:normal;
 }
 
@@ -330,6 +331,16 @@ img:hover {
     content:"";
     display:table;
     clear:both;
+}
+
+.largerText {
+    font-size: 2vw;
+    padding: 0.5vw;
+}
+
+.largerText:hover {
+    transition: transform 1s;
+    transform:scale(1.01);
 }
 
 /****end of table styling****/
