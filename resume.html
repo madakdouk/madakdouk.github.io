@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Maher's Resume</title>
+        <link rel= "shortcut icon" type="img/jpg" href="media/icon3.png">
+        <link rel="stylesheet" type="text/css" href="portfolio.css">
+        <script src="portfolio.js" defer></script>
+    </head>
+
+    <body class="background">
+
+        <!--navbar-->
+        <div class="navbar">
+            <div class="dropdown">
+                <a class="animate" href="index.html">Home
+                    <div class="dropdown_contents">
+                        <a class="dropdown_item" href="index.html#about_me">About Me</a>
+                        <a class="dropdown_item" href="index.html#highlights">Highlighted Projects</a>
+                        <a class="dropdown_item" href="index.html#workbench">Workbench</a>
+                    </div>
+                </a>
+            </div>
+            <div class="dropdown">
+                <a class="animate" href="games.html">Games
+                    <div class="dropdown_contents">
+                        <a class="dropdown_item" href="#">placeholder</a>
+                        <a class="dropdown_item" href="#">placeholder</a>
+                        <a class="dropdown_item" href="#">placeholder</a>
+                    </div>
+                </a>
+            </div>
+            <!-- temp comment out...
+            <div class="dropdown">
+                <a class="animate" href="software.html">Software
+                    <div class="dropdown_contents">
+                        <a class="dropdown_item" href="#">placeholder</a>
+                        <a class="dropdown_item" href="#">placeholder</a>
+                        <a class="dropdown_item" href="#">placeholder</a>
+                    </div>
+                </a>
+            </div>
+            <div class="dropdown">
+                <a class="animate" href="art.html">Art
+                    <div class="dropdown_contents">
+                        <a class="dropdown_item" href="#">placeholder</a>
+                        <a class="dropdown_item" href="#">placeholder</a>
+                        <a class="dropdown_item" href="#">placeholder</a>
+                    </div>
+                </a>
+            </div>
+            ...temp comment out -->
+            <div class="dropdown">
+                <a class="active" href="#resume">Resume
+                    <div class="dropdown_contents">
+                        <a class="dropdown_item" href="#skills_summary">Skills Summary</a>\
+                    </div>
+                </a>
+            </div>
+            <a onclick="openForm()" ondblclick="closeForm()" class="animate contact">Connect!</a>
+        </div>
+        <!--end navbar-->
+
+        <!--background img-->
+        <div id="resume">
+            <img class="bgimg" src="media\sprigatitio_&_smoliv.png" alt="Pokemon fan art made by me. Sprigatito and Smoliv.">
+        </div>
+        <!--end background img-->
+
+        <!--resume pdf-->
+        <div class="bgtext" id="pdf_bg">
+            <h1 class="header">Resume</h1>
+            <div class="pdf">
+                <object class="resume" data="media/GameDevResume.pdf" type="application/pdf">
+                    <p>Unable to display PDF file. <a href="media/GameDevResume.pdf">Download</a> instead.</p>
+                </object>
+            </div>
+        </div>
+        <!--end resume pdf-->
+
+        <!--skills summary-->
+        <div class="row" id="skills_summary">
+            <div class="column">
+                <h1 class="pageBody" id="skills">Skills Summary</h1>
+                <div class="row" id="skills_row">
+                    <div class="column" id="skills_column">
+                        <div class="skills_icon_container">
+                            <img class="skills_icon" src="media/skills/unreal-engine-icon.jpg" alt="Unreal Engine icon">
+                            <svg width="200" height="50">
+                                <circle cx="20" cy="35" r="13" fill="purple" />
+                                <circle cx="50" cy="35" r="13" fill="purple" />
+                                <path d="M 80 35 L 80 22 A 13 13 0 0 1 80 48 Z" fill="gray" />
+                                <path d="M 80 35 L 80 48 A 13 13 0 0 1 80 22 Z" fill="purple" />
+                                <circle cx="110" cy="35" r="13" fill="gray" />
+                                <circle cx="140" cy="35" r="13" fill="gray" />
+                            </svg>
+                            <!--
+                            <div class="skill-bar">
+                                <div class="segment"></div>
+                                <div class="segment"></div>
+                                <div class="segment"></div>
+                                <div class="segment"></div>
+                                <div class="segment"></div>
+                            </div>
+                            -->
+                        </div>
+                        <h3>Unreal Engine</h3>
+                        <div class="skills_icon_container">
+                            <img class="skills_icon" src="media/skills/unity.png" alt="Unity icon">
+                            <svg width="200" height="50">
+                                <circle cx="20" cy="35" r="13" fill="purple" />
+                                <circle cx="50" cy="35" r="13" fill="purple" />
+                                <circle cx="80" cy="35" r="13" fill="gray" />
+                                <circle cx="110" cy="35" r="13" fill="gray" />
+                                <circle cx="140" cy="35" r="13" fill="gray" />
+                            </svg>
+                        </div>
+                        <h3>Unity</h3>
+                        <div class="skills_icon_container">
+                            <img class="skills_icon" src="media/skills/blueprint.png" alt="blueprint icon">
+                            <svg width="200" height="50">
+                                <circle cx="20" cy="35" r="13" fill="purple" />
+                                <circle cx="50" cy="35" r="13" fill="purple" />
+                                <path d="M 80 35 L 80 22 A 13 13 0 0 1 80 48 Z" fill="gray" />
+                                <path d="M 80 35 L 80 48 A 13 13 0 0 1 80 22 Z" fill="purple" />
+                                <circle cx="110" cy="35" r="13" fill="gray" />
+                                <circle cx="140" cy="35" r="13" fill="gray" />
+                            </svg>
+                        </div>
+                        <h3>Blueprinting</h3>
+                        <div class="skills_icon_container">
+                            <img class="skills_icon" src="media/skills/levelbuilding.png" alt="level building icon">
+                            <svg width="200" height="50">
+                                <circle cx="20" cy="35" r="13" fill="purple" />
+                                <circle cx="50" cy="35" r="13" fill="purple" />
+                                <circle cx="80" cy="35" r="13" fill="gray" />
+                                <circle cx="110" cy="35" r="13" fill="gray" />
+                                <circle cx="140" cy="35" r="13" fill="gray" />
+                            </svg>
+                        </div>
+                        <h3>3D Level Building</h3>
+                    </div>
+                    <div class="column" id="skills_column">
+                        <div class="skills_icon_container">
+                            <img class="skills_icon" src="media/skills/Visual-Studio-Logo.png" alt="Visual Studio icon">
+                            <svg width="200" height="50">
+                                <circle cx="20" cy="35" r="13" fill="purple" />
+                                <circle cx="50" cy="35" r="13" fill="purple" />
+                                <circle cx="80" cy="35" r="13" fill="purple" />
+                                <circle cx="110" cy="35" r="13" fill="gray" />
+                                <circle cx="140" cy="35" r="13" fill="gray" />
+                            </svg>
+                        </div>
+                        <h3>Visual Studio</h3>
+                        <div class="skills_icon_container">
+                            <img class="skills_icon" src="media/skills/csharp.png" alt="C# icon">
+                            <svg width="200" height="50">
+                                <circle cx="20" cy="35" r="13" fill="purple" />
+                                <circle cx="50" cy="35" r="13" fill="purple" />
+                                <path d="M 80 35 L 80 22 A 13 13 0 0 1 80 48 Z" fill="gray" />
+                                <path d="M 80 35 L 80 48 A 13 13 0 0 1 80 22 Z" fill="purple" />
+                                <circle cx="110" cy="35" r="13" fill="gray" />
+                                <circle cx="140" cy="35" r="13" fill="gray" />
+                            </svg>
+                        </div>
+                        <h3>C#</h3>
+                        <div class="skills_icon_container">
+                            <img class="skills_icon" src="media/skills/cpp.png" alt="C++ icon">
+                            <svg width="200" height="50">
+                                <circle cx="20" cy="35" r="13" fill="purple" />
+                                <circle cx="50" cy="35" r="13" fill="purple" />
+                                <circle cx="80" cy="35" r="13" fill="gray" />
+                                <circle cx="110" cy="35" r="13" fill="gray" />
+                                <circle cx="140" cy="35" r="13" fill="gray" />
+                            </svg>
+                        </div>
+                        <h3>C++</h3>
+                        <div class="skills_icon_container">
+                            <img class="skills_icon" src="media/skills/SQL.png" alt="SQL icon">
+                            <svg width="200" height="50">
+                                <circle cx="20" cy="35" r="13" fill="purple" />
+                                <path d="M 50 35 L 50 22 A 13 13 0 0 1 50 48 Z" fill="gray" />
+                                <path d="M 50 35 L 50 48 A 13 13 0 0 1 50 22 Z" fill="purple" />
+                                <circle cx="80" cy="35" r="13" fill="gray" />
+                                <circle cx="110" cy="35" r="13" fill="gray" />
+                                <circle cx="140" cy="35" r="13" fill="gray" />
+                            </svg>
+                        </div>
+                        <h3>SQL</h3>
+                    </div>
+                    <div class="column" id="skills_column">
+                        <div class="skills_icon_container">
+                            <img class="skills_icon" src="media/skills/html.png" alt="HTML icon">
+                            <svg width="200" height="50">
+                                <circle cx="20" cy="35" r="13" fill="purple" />
+                                <circle cx="50" cy="35" r="13" fill="purple" />
+                                <circle cx="80" cy="35" r="13" fill="purple" />
+                                <circle cx="110" cy="35" r="13" fill="gray" />
+                                <circle cx="140" cy="35" r="13" fill="gray" />
+                            </svg>
+                        </div>
+                        <h3>HTML</h3>
+                        <div class="skills_icon_container">
+                            <img class="skills_icon" src="media/skills/css.jpg" alt="CSS icon">
+                            <svg width="200" height="50">
+                                <circle cx="20" cy="35" r="13" fill="purple" />
+                                <circle cx="50" cy="35" r="13" fill="purple" />
+                                <circle cx="80" cy="35" r="13" fill="purple" />
+                                <circle cx="110" cy="35" r="13" fill="gray" />
+                                <circle cx="140" cy="35" r="13" fill="gray" />
+                            </svg>
+                        </div>
+                        <h3>CSS</h3>
+                        <div class="skills_icon_container">
+                            <img class="skills_icon" src="media/skills/js.png" alt="JavaScript icon">
+                            <svg width="200" height="50">
+                                <circle cx="20" cy="35" r="13" fill="purple" />
+                                <circle cx="50" cy="35" r="13" fill="purple" />
+                                <circle cx="80" cy="35" r="13" fill="gray" />
+                                <circle cx="110" cy="35" r="13" fill="gray" />
+                                <circle cx="140" cy="35" r="13" fill="gray" />
+                            </svg>
+                        </div>
+                        <h3>JavaScript</h3>
+                    </div>
+                    <!-- temp leaving out
+                    <div class="column" id="skills_column">
+                        <div class="skills_img_container">
+                            <img src="media/art.png" class="skills_img" alt="Controller icon">
+                        </div>
+                        <h2 id="ss">Art<h2>
+                    </div>
+                    -->
+                </div>
+            </div>
+        </div>
+        <!--end skills summary-->
+
+        <!--connect-->
+        <div id="contact" class="contact">
+            <button onclick="openForm()" class="pop_up_button">CONNECT!</button>
+            <div class="form_popup" id="form">
+                <div class="form_container">
+                    <div class="row" id="contact_row">
+                        <div class="column" id="contact_column">
+                            <a href="mailto:mdakdouk2015@outlook.com">
+                                <img src="media/email.jpg" class="contact_img" alt="email icon">
+                            </a>
+                        </div>
+                        <div class="column" id="contact_column">
+                            <a href="https://www.linkedin.com/in/mdakdouk/" target="blank">
+                                <img src="media/linkedIn.png" class="contact_img" alt="LinkedIn icon">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row" id="contact_row">
+                        <div class="column" id="contact_column">
+                            <a href="https://github.com/madakdouk" target="blank">
+                                <img src="media/github.png" class="contact_img" alt="Github icon">
+                            </a>
+                        </div>
+                        <div class="column" id="contact_column">
+                            <a href="https://discord.com/users/poj#0222" target="blank">
+                                <img src="media/discord.png" class="contact_img" alt="Discord icon">
+                            </a>
+                        </div>
+                    </div>
+                    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+                </div>
+            </div>
+        </div>
+        <!--end connect-->
+
+        <!--footer-->
+        <div class="footer">
+            <p>
+                Maher's portfolio | 
+                <a target="_blank" href="https://icons8.com/icon/IXDNZeYXiJcH/coding">Website icon</a> by <a target="_blank" href="https://icons8.com">Icons8</a> |
+                All content and trademarks are property of their respective owners.
+            </p>
+        </div>
+        <!--end footer-->
+    </body>
+</html>

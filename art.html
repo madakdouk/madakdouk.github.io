@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Maher's Art</title>
+        <link rel= "shortcut icon" type="img/jpg" href="media/icon3.png">
+        <link rel="stylesheet" type="text/css" href="portfolio.css">
+        <script src="portfolio.js" defer></script>
+    </head>
+
+    <body class="background">
+
+        <!--navbar-->
+        <div class="navbar">
+            <a href="index.html">Home</a>
+            <a href="games.html">Games</a>
+            <div class="dropdown">
+                <a class="active" href="#art">Art
+                <div class="dropdown_contents">
+                    <a class="dropdown_item" href="#workbench">placeholder</a>
+                    <a class="dropdown_item" href="#skills">placeholder</a>
+                    <a class="dropdown_item" href="#about_me">placeholder</a>
+                </div>
+                </a>
+            </div>
+            <a onclick="openForm()" ondblclick="closeForm()" class="contact">Contact</a>
+        </div>
+        <!--end navbar-->
+
+        <!--background img-->
+        <div id="art">
+            <img class="bgimg" src="media\sprigatitio_&_smoliv.png" alt="Pokemon fan art made by me. Sprigatito and Smoliv.">
+        </div>
+        <!--end background img-->
+
+        <!--bg text-->
+        <div class="bgtext">
+            <h1 class="header">Art</h1>
+            <strong>
+                <p class="center">
+                </p>
+            </strong>
+        </div>
+        <!--end bg text-->
+        <!--art-->
+        <div class="row">
+            <div class="column">
+                <h1></h1>
+                <p>
+                    
+                </p>
+            </div>
+        </div>
+        <!--end art-->
+
+        <!--connect-->
+        <div id="contact" class="contact">
+            <button onclick="openForm()" class="pop_up_button">CONNECT!</button>
+            <div class="form_popup" id="form">
+                <div class="form_container">
+                    <div class="row" id="contact_row">
+                        <div class="column" id="contact_column">
+                            <a href="mailto:mdakdouk2015@outlook.com">
+                                <img src="media/email.jpg" class="contact_img" alt="email icon">
+                            </a>
+                        </div>
+                        <div class="column" id="contact_column">
+                            <a href="https://www.linkedin.com/in/mdakdouk/" target="blank">
+                                <img src="media/linkedIn.png" class="contact_img" alt="LinkedIn icon">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row" id="contact_row">
+                        <div class="column" id="contact_column">
+                            <a href="https://github.com/madakdouk" target="blank">
+                                <img src="media/github.png" class="contact_img" alt="Github icon">
+                            </a>
+                        </div>
+                        <div class="column" id="contact_column">
+                            <a href="https://discord.com/users/poj#0222" target="blank">
+                                <img src="media/discord.png" class="contact_img" alt="Discord icon">
+                            </a>
+                        </div>
+                    </div>
+                    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+                </div>
+            </div>
+        </div>
+        <!--end connect-->
+
+        <!--footer-->
+        <div class="footer">
+            <p>
+                Maher's portfolio | 
+                <a target="_blank" href="https://icons8.com/icon/IXDNZeYXiJcH/coding">Website icon</a> by <a target="_blank" href="https://icons8.com">Icons8</a> |
+                Pokemon and character names are © and trademark Nintendo/Creatures Inc./GAME FREAK inc
+            </p>
+        </div>
+        <!--end footer-->
+    </body>
+</html>

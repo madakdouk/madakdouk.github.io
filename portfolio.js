@@ -7,46 +7,6 @@ function closeForm() {
     document.getElementById("form").style.display = "none";
 }
 
-//displays first image in slideshow when page loads
-var slideIndex = 1;
-showSlides(slideIndex);
-
-//changes slide when prev/next controls are used
-function plusSlides(n) {
-    showSlides(slideIndex += n);
-}
-
-//changes slide when thumbnail controls are used
-function currentSlide(n) {
-    showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-    //storing slides and thumbnail controls in their own arrays
-    var slides = document.getElementsByClassName("mySlides");
-    var dots = document.getElementsByClassName("dot");
-
-    //controlling what happens when slideIndex exceeds or is less than amount of slides
-    if (n > slides.length) {slideIndex = 1};
-    if (n < 1) {slideIndex = slides.length};
-
-    //hides inactive slides
-    for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-    }
-
-    //removes active class from thumbnails
-    for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace("active", "");
-    }
-
-    //displays image in slideshow
-    slides[slideIndex - 1].style.display = "block";
-
-    //adds active style to respective thumbnail
-    dots[slideIndex - 1].className += " active";
-}
-
 //close contact form when user clicks off of it
 //event listener added for any clicks on website
 document.addEventListener("click", function(event){
@@ -55,3 +15,58 @@ document.addEventListener("click", function(event){
         closeForm();
     }
 }, false)
+
+//displays first image in slideshow when page loads
+//var slideIndex = 1;
+//showSlides(slideIndex);
+
+//changes slide when prev/next controls are used
+//function plusSlides(n) {
+//    showSlides(slideIndex += n);
+//}
+
+//automatic scroll through slideshow
+//var slideshowInterval = setInterval(function() {
+//   plusSlides(1);
+//}, 4000);
+
+//var slideshowContainer = document.getElementById("slideshow_container");
+//slideshowContainer.addEventListener("mouseover", function() {
+//    clearInterval(slideshowInterval);
+//});
+//slideshowContainer.addEventListener("mouseout", function() {
+//    slideshowInterval = setInterval(function() {
+//        plusSlides(1);
+//    }, 4000);
+//});
+
+//changes slide when thumbnail controls are used
+//function currentSlide(n) {
+//    showSlides(slideIndex = n);
+//}
+
+//function showSlides(n) {
+    //storing slides and thumbnail controls in their own arrays
+ //   var slides = document.getElementsByClassName("mySlides");
+ //   var dots = document.getElementsByClassName("dot");
+
+    //controlling what happens when slideIndex exceeds or is less than amount of slides
+ //   if (n > slides.length) {slideIndex = 1};
+//    if (n < 1) {slideIndex = slides.length};
+
+    //hides inactive slides
+ //   for (i = 0; i < slides.length; i++) {
+ //       slides[i].style.display = "none";
+ //   }
+
+    //removes active class from thumbnails
+ //   for (i = 0; i < dots.length; i++) {
+ //       dots[i].className = dots[i].className.replace("active", "");
+ //   }
+
+    //displays image in slideshow
+ //   slides[slideIndex - 1].style.display = "block";
+
+    //adds active style to respective thumbnail
+ //   dots[slideIndex - 1].className += " active";
+//}

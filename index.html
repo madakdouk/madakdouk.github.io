@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Maher's Portfolio</title>
         <link rel= "shortcut icon" type="img/jpg" href="media/icon3.png">
         <link rel="stylesheet" type="text/css" href="portfolio.css">
@@ -13,12 +13,52 @@
 
         <!--navbar-->
         <div class="navbar">
-            <a class="active" href="#home">Home</a>
-            <a href="#slideshow">Intro</a>
-            <a href="#about">About</a>
-            <a href="#github">GitHub</a>
-            <a href="#linkedin">LinkedIn</a>
-            <a onclick="openForm()" ondblclick="closeForm()" class="contact">Contact</a>
+            <div class="dropdown">
+                <a class="active" href="#home">Home
+                    <div class="dropdown_contents">
+                        <a class="dropdown_item" href="#about_me">About Me</a>
+                        <a class="dropdown_item" href="#highlights">Highlighted Projects</a>
+                        <a class="dropdown_item" href="#workbench">Workbench</a>
+                    </div>
+                </a>
+            </div>
+            <div class="dropdown">
+                <a class="animate" href="games.html">Games
+                    <div class="dropdown_contents">
+                        <a class="dropdown_item" href="#">placeholder</a>
+                        <a class="dropdown_item" href="#">placeholder</a>
+                        <a class="dropdown_item" href="#">placeholder</a>
+                    </div>
+                </a>
+            </div>
+            <!-- temp comment out...
+            <div class="dropdown">
+                <a class="animate" href="software.html">Software
+                    <div class="dropdown_contents">
+                        <a class="dropdown_item" href="#">placeholder</a>
+                        <a class="dropdown_item" href="#">placeholder</a>
+                        <a class="dropdown_item" href="#">placeholder</a>
+                    </div>
+                </a>
+            </div>
+            <div class="dropdown">
+                <a class="animate" href="art.html">Art
+                    <div class="dropdown_contents">
+                        <a class="dropdown_item" href="#">placeholder</a>
+                        <a class="dropdown_item" href="#">placeholder</a>
+                        <a class="dropdown_item" href="#">placeholder</a>
+                    </div>
+                </a>
+            </div>
+            ...temp comment out -->
+            <div class="dropdown">
+                <a class="animate" href="resume.html">Resume
+                    <div class="dropdown_contents">
+                        <a class="dropdown_item" href="#">Skills Summary</a>
+                    </div>
+                </a>
+            </div>
+            <a onclick="openForm()" ondblclick="closeForm()" class="animate contact">Connect!</a>
         </div>
         <!--end navbar-->
 
@@ -30,57 +70,48 @@
 
         <!--video text-->
         <div class="bgtext">
-            <h1 class="header">Maher's Portfolio</h1>
-            <strong>
-                <p class="center">
-                    <!--maybe add a quote or something else up here-->
-                    Welcome to my portfolio website! 
-                    I'm Maher, a software and game developer.
-                    Here you can learn about my background, experiences, and goals. 
-                    I appreciate your time and I hope you enjoy.
-                </p>
-            </strong>
+            <h1 id="hover" class="header">Maher's Portfolio</h1>
+            <p>
+                <!--maybe add a quote or something else up here-->
+                Welcome to my portfolio website! 
+                My name is Maher and I'm a software and game developer.
+                Here you can learn about my background, experiences, and goals. 
+                I appreciate your time and I hope you enjoy.
+            </p>
         </div>
         <!--end video text-->
 
         <!--slideshow-->
+        <!--
         <div id="slideshow">
             <div id="slideshow_background">
                 <div id="slideshow_container">
-                    <!--slide 1 of 3-->
                     <div class="mySlides fade">
                         <img class="slideshow_images" src="media/selfie.jpeg" alt="personal picture">
-                        <div class="text">I would love to assist you with your project!</div>
+                        <div class="slideshowText_bottom">I would love to assist you with your project!</div>
                     </div>
-                    <!--slide 2 of 5-->
                     <div class="mySlides fade">
                         <img class="slideshow_images" src="media/htmlcssjs.png" alt="current skills">
-                        <div class="text">I'm currently trained in HTML, CSS, Javascript...</div>
+                        <div class="slideshowText_bottom">I'm currently trained in HTML, CSS, Javascript...</div>
                     </div>
-                    <!--slide 3 of 5-->
                     <div class="mySlides fade">
                         <img class="slideshow_images" src="media/sqlserver.png" alt="current skills">
-                        <div class="text">SQL...</div>
+                        <div class="slideshowText_bottom">SQL...</div>
                     </div>
-                    <!--slide 4 of 5-->
                     <div class="mySlides fade">
-                        <img class="slideshow_images" src="media/cshar.png" alt="current skills">
-                        <div class="text">C++, and C#</div>
+                        <img class="slideshow_images" src="media/csharpcpp.jpg" alt="current skills">
+                        <div class="slideshowText_bottom">C++, and C#</div>
                     </div>
-                    <!--slide 5 of 5-->
                     <div class="mySlides fade">
                         <a class="header contact" onclick="openForm()">
                             <img class="slideshow_images" src="media/coding.jpg" alt="contact picture">
-                            <div class="text">Contact me!</div>
+                            <div class="slideshowText_bottom">Contact me!</div>
                         </a>
                     </div>
-                    <!--prev/next buttons-->
                     <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
                     <a class="next" onclick="plusSlides(1)">&#10095;</a>
                 </div>
-                <br> <!--adding space between slideshow imgs and thumbnail controls-->
-
-                <!--thumbnail controls-->
+                <br>
                 <div style="text-align: center">
                     <span class="dot" onclick="currentSlide(1)"></span>
                     <span class="dot" onclick="currentSlide(2)"></span>
@@ -90,108 +121,177 @@
                 </div>
             </div>
         </div>
+        -->
         <!--end slideshow-->
 
         <!--about-->
-        <div class="row" id="about">
-            <!--left column-->
-            <div class="img_column">
-                <img src="./media/pokemon.jpg" alt="Pokemon game cartridges">
-            </div>
-            <!--end left column-->
-
-            <!--right column-->
-            <div class="text_column">
-                <h1>About</h1>
-                <p>
-                    I'm a graduate of <a href="https://www.learncodinganywhere.com" target="_blank">The Tech Academy</a> through their C# and .NET bootcamp. 
-                    I continued study with them to learn Unity, Unreal Engine, and the basics of game development.
-                    At this time, I'm trained in HTML, CSS, JavaScript, SQL, C#, and C++.
+        <div class="row" id="about_me">
+            <div class="column">
+                <h1 class="pageBody">About Me</h1>
+                    <p class="about">
+                    I'm a graduate of <a href="https://www.learncodinganywhere.com" target="_blank">The Tech Academy</a> 
+                    through their C# and .NET bootcamp. I continued study with them to learn Unity, Unreal Engine,
+                    and the basics of game development. I'm looking to get my professional start in the game development industry!
+                    My main areas of interest are level design and logic programming. I'm always curious, love learning new things, and love being creative.
+                    Digital art is another area of interest for me, although moreso as a hobby.  Incorporating my own art in my 
+                    future video game projects is something that I look forward to!
                     <br>
                     <br>
-                    Outside of coding and playing video games, I enjoy creating digital art and listening to music. 
-                    I'm excited to try incorporating my own art in my future video game projects!
-                    <br>
-                    <br>
-                    Please feel free to <a href="#contact">contact</a> me regarding any projects or even mutual interests that we share. 
+                    Please feel free to <a onclick="openForm()" ondblclick="closeForm()" class="contact">contact</a> me regarding any projects or even mutual interests that we share. 
                     I'd love to connect!
-                </p>
+                    </p>
             </div>
-            <!--end right column-->
         </div>
         <!--end about-->
 
-        <!--github-->
-        <div class="row" id="github">
-            <!--left column-->
-            <div class="text_column">
-                <h1>GitHub</h1>
-                <h6 class="largerText">
-                    My coding projects can all be found on my GitHub profile 
-                    <a href="https://github.com/madakdouk?tab=repositories" target="_blank">here</a>.
-                    Some of my favorite projects are <a href="https://github.com/madakdouk/CSharpProjects/tree/main/twentyoneGame" target="_blank">Twenty One Game</a>
-                    and <a href="https://github.com/madakdouk/JavaScriptProjects/tree/main/TicTacToe" target="_blank">Tic-Tac-Toe</a>!
-                </h6>
+        <!--highlights-->
+        <div class="row" id="highlights">
+            <div class="column">
+                <h1 class="pageBody">Highlighted Projects</h1>
+                <div class="row" id="highlight_row">
+                    <div class="column" id="highlight_column">
+                        <h2>StackOBot Level</h2>
+                        <div class="body_img_container">
+                            <img src="media/most_recent042723.png" class="body_img" alt="Screenshot from my StackOBot level">
+                            <div id="img_caption" class="body_img_text">
+                                hover for more details...
+                            </div>
+                            <span id="img_caption" class="body_img_text hover_text">
+                                A custom level that I created following 
+                                along with a tutorial from 
+                                <a href="https://dev.epicgames.com/community/learning/tutorials/e2V/your-first-game-in-unreal-engine-5">Epic Games Dev Community.</a>
+                                I created the level from scratch using the source 
+                                files provided by Epic.<br><br>
+                                Click to learn more!
+                            </span>
+                        </div>
+                    </div>
+                    <div class="column" id="highlight_column">
+                        <h2>Pong<h2>
+                        <div class="body_img_container">
+                            <img src="media/pong1.png" class="body_img" alt="Screenshot of in-progress 3D model of a shiny Psyduck">
+                            <div id="img_caption" class="body_img_text">
+                                hover for more details...
+                            </div>
+                            <span id="img_caption" class="body_img_text hover_text">
+                                A pong game I created following along a tutorial from <a href="https://app.pluralsight.com/library/courses/unreal-engine-4-blueprint-cplusplus-integration/table-of-contents">Pluralsight</a>.
+                                The logic was implemented using C++, including the game boundaries,
+                                the ball, and the player and AI paddles.
+                                <br><br>
+                                Click to learn more!
+                            </span>
+                        </div>
+                    </div>
+                    <div class="column" id="highlight_column">
+                        <h2>Maze<h2>
+                        <div class="body_img_container">
+                            <img src="media/maze1.png" class="body_img" alt="Screenshot of in-progress 3D model of a shiny Psyduck">
+                            <div id="img_caption" class="body_img_text">
+                                hover for more details...
+                            </div>
+                            <span id="img_caption" class="body_img_text hover_text">
+                                This is a simple maze game that I created
+                                which uses tilt controls to move the board
+                                and guide the ball to the goal.
+                                <br><br>
+                                Click to learn more!
+                            </span>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <!--end left column-->
-            <!--right column-->
-            <div class="img_column">
-                <a href="https://github.com/madakdouk?tab=repositories" target="blank"><img src="./media/github.png" alt="GitHub logo"></a>
-            </div>
-            <!--end right column-->
         </div>
-        <!--end github-->
+        <!--end highlights-->
 
-        <!--linkedin-->
-        <div class="row" id="linkedin">
-            <!--left column-->
-            <div class="img_column">
-                <a href="https://www.linkedin.com/in/mdakdouk/" target="blank"><img src="./media/linkedIn.png" alt="LinkedIn logo"></a>
+        <!--workbench-->
+        <div class="row" id="workbench">
+            <div class="column">
+                <h1 class="pageBody" id="wb">Workbench</h1>
+                <div class="row">
+                    <div class="column" id="in_progress">
+                        <h2 id="wb">In Progress<h2>
+                        <div class="body_img_container">
+                            <img src="media/in_progress042723.png" class="body_img" alt="Screenshot of in-progress 3D model of a shiny Psyduck">
+                            <div id="img_caption" class="body_img_text">
+                                hover for more details...
+                            </div>
+                            <span id="img_caption" class="body_img_text hover_text">
+                                I'm currently working on an intro level for
+                                an RPG game, codename LegendDuck! The picture shows a model of one
+                                of my favorite Pokemon which I'd like to feature
+                                in the game. It's the first 3D model I've ever created.
+                                <br><br>
+                                Click to learn more!
+                            </span>
+                        </div>
+                        <h2 id="wb">LegendDuck</h2>
+                    </div>
+                    <div class="column" id="most_recent">
+                        <h2 id="wb">Most Recent</h2>
+                        <div class="body_img_container">
+                            <img src="media/most_recent042723.png" class="body_img" alt="Screenshot from my StackOBot level">
+                            <div id="img_caption" class="body_img_text">
+                                hover for more details...
+                            </div>
+                            <span id="img_caption" class="body_img_text hover_text">
+                                A custom level that I created following 
+                                along with a tutorial from 
+                                <a href="https://dev.epicgames.com/community/learning/tutorials/e2V/your-first-game-in-unreal-engine-5">Epic Games Dev Community.</a>
+                                I created the level from scratch using the source 
+                                files provided by Epic.<br><br>
+                                Click to learn more!
+                            </span>
+                        </div>
+                        <h2 id="wb">StackOBot Level</h2>
+                    </div>
+                </div>
             </div>
-            <!--end left column-->
-            <!--right column-->
-            <div class="text_column">
-                <h1>LinkedIn</h1>
-                <h6 class="largerText">
-                    You can connect with me on LinkedIn <a href="https://www.linkedin.com/in/mdakdouk/" target="blank">here</a>.
-                    You can also view my resume by clicking <a href="https://1drv.ms/b/s!Avf6eRrCjWE9ipgSn1qWVS1GVT4jjA?e=kBc9ij" target="blank">here</a>.
-                </h6>
-            </div>
-            <!--end right column-->
         </div>
-        <!--end linkedin-->
+        <!--end workbench-->
 
-        <!--contact-->
-        <div id="contact">
-            <button onclick="openForm()" class="pop_up_button">CONTACT</button>
+        <!--connect-->
+        <div id="contact" class="contact">
+            <button onclick="openForm()" class="pop_up_button">CONNECT!</button>
             <div class="form_popup" id="form">
-                <form action="https://formspree.io/f/xgedgroe" method="POST" class="form_container">
-                    <h1>Contact</h1>
-                    <label for="name"><b>Name</b></label>
-                        <input type="text" placeholder="Name" name="name" required>
-                    <label for="phone"><b>Phone number</b></label>
-                        <input type="text" placeholder="Phone number" name="phone">
-                    <label for="email"><b>Email</b></label>
-                        <input type="text" placeholder="Email" name="email" required>
-                    <label for="message"><b>Message</b></label>
-                        <input type="text" placeholder="Message" name="message" required>
-                    
-                    <button type="submit" class="btn">Submit</button>
+                <div class="form_container">
+                    <div class="row" id="contact_row">
+                        <div class="column" id="contact_column">
+                            <a href="mailto:mdakdouk2015@outlook.com">
+                                <img src="media/email.jpg" class="contact_img" alt="email icon">
+                            </a>
+                        </div>
+                        <div class="column" id="contact_column">
+                            <a href="https://www.linkedin.com/in/mdakdouk/" target="blank">
+                                <img src="media/linkedIn.png" class="contact_img" alt="LinkedIn icon">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row" id="contact_row">
+                        <div class="column" id="contact_column">
+                            <a href="https://github.com/madakdouk" target="blank">
+                                <img src="media/github.png" class="contact_img" alt="Github icon">
+                            </a>
+                        </div>
+                        <div class="column" id="contact_column">
+                            <a href="https://discord.com/users/poj#0222" target="blank">
+                                <img src="media/discord.png" class="contact_img" alt="Discord icon">
+                            </a>
+                        </div>
+                    </div>
                     <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
-                </form>
+                </div>
             </div>
         </div>
-        <!--end contact-->
+        <!--end connect-->
 
         <!--footer-->
         <div class="footer">
             <p>
                 Maher's portfolio | 
                 <a target="_blank" href="https://icons8.com/icon/IXDNZeYXiJcH/coding">Website icon</a> by <a target="_blank" href="https://icons8.com">Icons8</a> |
-                Pokemon and character names are © and trademark Nintendo/Creatures Inc./GAME FREAK inc
+                All content and trademarks are property of their respective owners.
             </p>
         </div>
         <!--end footer-->
-
     </body>
 </html>
