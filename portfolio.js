@@ -7,6 +7,16 @@ function closeForm() {
     document.getElementById("form").style.display = "none";
 }
 
+/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+  }
+
 //close contact form when user clicks off of it
 //event listener added for any clicks on website
 document.addEventListener("click", function(event){
