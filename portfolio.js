@@ -7,6 +7,15 @@ function closeForm() {
     document.getElementById("form").style.display = "none";
 }
 
+//close contact form when user clicks off of it
+//event listener added for any clicks on website
+document.addEventListener("click", function(event){
+  //if click happens on cancel button or anywhere that's not the contact form then call closeForm function
+  if (event.target.matches(".cancel") || !event.target.closest(".form_popup") && !event.target.closest(".pop_up_button") && !event.target.closest(".contact")) {
+      closeForm();
+  }
+}, false)
+
 /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
 function myFunction() {
     var x = document.getElementById("myTopnav");
@@ -16,15 +25,6 @@ function myFunction() {
       x.className = "topnav";
     }
   }
-
-//close contact form when user clicks off of it
-//event listener added for any clicks on website
-document.addEventListener("click", function(event){
-    //if click happens on cancel button or anywhere that's not the contact form then call closeForm function
-    if (event.target.matches(".cancel") || !event.target.closest(".form_popup") && !event.target.closest(".pop_up_button") && !event.target.closest(".contact")) {
-        closeForm();
-    }
-}, false)
 
 //displays first image in slideshow when page loads
 //var slideIndex = 1;
