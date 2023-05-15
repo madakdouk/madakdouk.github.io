@@ -1,3 +1,4 @@
+/* dont need right now
 //open and close contact form
 function openForm() {
     document.getElementById("form").style.display = "block";
@@ -15,6 +16,7 @@ document.addEventListener("click", function(event){
       closeForm();
   }
 }, false)
+*/
 
 /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
 function myFunction() {

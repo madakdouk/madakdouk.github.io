@@ -26,17 +26,17 @@ h3 {
     margin:0% 0% 8% 0%;
 }
 
+.footer h3 {
+margin:0%;
+color:azure;
+}
 
 /*portfolio title text*/
 
 .header {
     color:black;
-    padding-top: 10vh;
+    padding-top: 12vh;
     margin-top:0;
-}
-.header:hover {
-    transition:1s transform;
-    transform:scale(1.01);
 }
 
 /*p*/
@@ -63,11 +63,6 @@ p.about {
     letter-spacing:0.1vw;
 }
 
-.bgtext p:hover {
-    transition:1s transform;
-    transform:scale(1.01);
-}
-
 .contact_p {
     color:black;
     font-weight:bold;
@@ -77,8 +72,9 @@ p.about {
 
 a {
     color:bisque;
+    font-weight:bold;
     cursor:pointer;
-    text-decoration:wavy bisque underline;
+    text-decoration:none;
 }
 
 /*img*/
@@ -118,13 +114,8 @@ a {
 }
 
 .contact_img {
-    height:8vh;
-    width:8vh;
-}
-
-.contact_img:hover {
-    transition:transform 1s;
-    transform:scale(1.05);
+    height:5vh;
+    width:5vh;
 }
 
 #img_caption.body_img_text {
@@ -179,9 +170,11 @@ span#img_caption a {
 }
 
 .footer p{
-    text-align: left;
+    text-align:left;
     font-size:1.1vw;
     letter-spacing:normal;
+    margin:0%;
+    padding:0%;
 }
 
 /****end general styling****/
