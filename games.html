@@ -50,13 +50,16 @@
 
         <!--floatnav-->
         <div class="floatnav">
-            <button type="button" class="floatnavButton">^</button>
+            <button type="button" class="floatnavButton">&#9665</button>
             <div class="floatnavMenu">
                 <div class="row">
-                    <a class="floatnavContent" href="#games">Page Top</a>
+                    <a class="floatnavContent" href="#games">Top &#9650</a>
                 </div>
                 <div class="row">
-                    <a class="floatnavContent" href="#">Placeholder</a>
+                    <a class="floatnavContent" href="#games_brief">Games</a>
+                </div>
+                <div class="row">
+                    <a class="floatnavContent" href="#">In Progress</a>
                 </div>
             </div>
         </div>
@@ -79,12 +82,70 @@
             </strong>
         </div>
         <!--end bg text-->
+
         <!--games-->
-        <div class="row">
+        <div class="row" id="games_brief">
             <div class="column">
-                <h1></h1>
-                <p>
-                </p>
+                <div class="row" id="highlight_row">
+                    <div class="column" id="highlight_column">
+                        <h2>StackOBot Level</h2>
+                        <div class="body_img_container">
+                            <img src="media/most_recent042723.png" class="body_img" alt="Screenshot from my StackOBot level">
+                            <div id="img_caption" class="body_img_text">
+                                hover for more details...
+                            </div>
+                            <span id="img_caption" class="body_img_text hover_text">
+                                A custom level that I created following 
+                                along with a tutorial from 
+                                <a href="https://dev.epicgames.com/community/learning/tutorials/e2V/your-first-game-in-unreal-engine-5">Epic Games Dev Community.</a>
+                                I created the level from scratch using the source 
+                                files provided by Epic.<br><br>
+                                More details soon
+                                <!--temp
+                                Click to learn more!
+                                -->
+                            </span>
+                        </div>
+                    </div>
+                    <div class="column" id="highlight_column">
+                        <h2>Pong<h2>
+                        <div class="body_img_container">
+                            <img src="media/pong1.png" class="body_img" alt="Screenshot from my Pong game">
+                            <div id="img_caption" class="body_img_text">
+                                hover for more details...
+                            </div>
+                            <span id="img_caption" class="body_img_text hover_text">
+                                A pong game I created following along a tutorial from <a href="https://app.pluralsight.com/library/courses/unreal-engine-4-blueprint-cplusplus-integration/table-of-contents">Pluralsight</a>.
+                                The logic was implemented using C++, including the game boundaries,
+                                the ball, and the player and AI paddles.
+                                <br><br>
+                                More details soon
+                                <!--temp
+                                Click to learn more!
+                                -->
+                            </span>
+                        </div>
+                    </div>
+                    <div class="column" id="highlight_column">
+                        <h2>Maze<h2>
+                        <div class="body_img_container">
+                            <img src="media/maze1.png" class="body_img" alt="Screenshot from my maze game">
+                            <div id="img_caption" class="body_img_text">
+                                hover for more details...
+                            </div>
+                            <span id="img_caption" class="body_img_text hover_text">
+                                This is a simple maze game that I created
+                                which uses tilt controls to move the board
+                                and guide the ball to the goal.
+                                <br><br>
+                                More details soon
+                                <!--temp
+                                Click to learn more!
+                                -->
+                            </span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         <!--end games-->

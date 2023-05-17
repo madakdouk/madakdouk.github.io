@@ -491,6 +491,10 @@ a.animate {
     background-color:rgb(61, 4, 77);
 }
 
+.row#games_brief {
+    background-color:rgb(54, 40, 67);
+}
+
 #in_progress.column {
     border:none;
     float:left;
