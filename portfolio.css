@@ -77,6 +77,15 @@ a {
     text-decoration:none;
 }
 
+a.games_link {
+    color:mediumslateblue;
+    z-index:5;
+}
+
+a:hover {
+    color:black;
+}
+
 /*img*/
 
 .body_img_container {
@@ -142,11 +151,6 @@ a {
 
 span#img_caption {
     padding:0.8vw;
-}
-
-span#img_caption a {
-    color:mediumslateblue;
-    text-decoration:wavy mediumslateblue underline;
 }
 
 .hover_text {
