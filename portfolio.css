@@ -87,6 +87,14 @@ a {
     width:350px;
 }
 
+.games_brief1 {
+    margin-left:8.5vw;
+}
+
+.games_brief2 {
+    margin-left:8.7vw;
+}
+
 .skills_img_container {
     height:150px;
     width:150px;
@@ -159,6 +167,7 @@ span#img_caption a {
 
 .body_img_container:hover .hover_text {
     display:block;
+    cursor:pointer;
 }
 
 /*footer*/
@@ -344,6 +353,10 @@ a.animate {
     animation: moveVideoText 1s;
 }
 
+.game_bg {
+    height:100%;
+}
+
 #pdf_bg.bgtext {
     height:150vh;
 }
@@ -357,103 +370,121 @@ a.animate {
 
 /****slideshow styling****/
 
-#slideshow_background {
-    background: rgba(255,255,255,0.35);
+/* Slideshow container */
+.slideshow {
+    width:500px;
+    height:450px;
+    position: relative;
+    margin-left:5vw;
+    margin-bottom:1vw;
+    padding:0;
+    flex:1;
+    border: thick outset bisque;
 }
 
-.mySlides {
-    display:none;
+.game_desc {
+    flex:1;
 }
 
-#slideshow_container {
-    width:39.5vw;
-    height:auto;
-    padding-top:4%;
-    position:relative;
-    margin:auto;
-}
-
-#slideshow_container a {
-    text-decoration:none;
-}
-
-.slideshow_images {
-    filter:grayscale(70%);
-    vertical-align: middle;
-    height: auto;
-    box-shadow: 0px 5px 10px 12px rgba(0,0,0,0.75);
-    width:100%;
-}
-
-.prev, .next {
-    cursor:pointer;
-    position:absolute;
-    top:50%;
-    width:auto;
-    padding:2vw;
-    color:darkgray;
-    font-weight:bold;
+p.game_text {
     font-size:1.5vw;
-    border-radius: 0 3px 3px 0;
-    user-select:none;
-    transition:0.6s ease;
+    text-align:left;
+    margin:0;
+    padding-left:1vw;
+    padding-top:0;
+    position:relative;
+    top:0;
+    left:0;
+}
+  
+/* Hide the images by default */
+.mySlides {
+    display: none;
+    height:100%;
 }
 
+.slideshow_img {
+    width:100%;
+    height:100%;
+}
+
+.slideshow_vid {
+    height:100%;
+    width:100%;
+    object-fit:cover;
+}
+  
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color:mediumslateblue;
+    background-color:rgba(255, 255, 255, 0.408);
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+  
+/* Position the "next button" to the right */
 .next {
-    right:0;
+    right: 0;
     border-radius: 3px 0 0 3px;
 }
-
+  
+/* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
     background-color:rgba(0,0,0,0.8);
-    color:white;
 }
-
-.slideshowText_bottom {
-    color:white;
-    padding:1vw;
+  
+/* Caption text */
+.text {
+    color:black;
+    background-color:rgba(255, 255, 255, 0.404);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size:15px;
+    font-weight:bold;
     position:absolute;
     bottom:0;
     width:100%;
     text-align:center;
-    font-family: Perpetua, Rockwell Extra Bold;
-    letter-spacing: 0.1vw;
-    font-size:1.5vw;
-    background-color:rgba(0,0,0,0.75);
-    font-weight:bold;
+}
+  
+/* The dots/bullets/indicators */
+.slideshow_dots {
+    margin-left:25vw;
+    margin-bottom:1vw;
 }
 
 .dot {
     cursor:pointer;
-    height:1vw;
-    width:1vw;
-    margin:.25vw;
+    height:15px;
+    width:15px;
+    margin:0 3px;
     background-color:mediumslateblue;
     border-radius:50%;
     display:inline-block;
-    transition: background-color 0.6s ease;
-    z-index:0;
+    transition:background-color 0.6s ease;
 }
-
-.active, .dot:hover {
+  
+.active_dot, .dot:hover {
     background-color:black;
 }
-
+  
+/* Fading animation */
 .fade {
     animation-name:fade;
-    animation-duration: 1.5s;
-    -webkit-animation-name:fade;
-    -webkit-animation-duration:1.5s;
+    animation-duration:1.5s;
 }
-
-@-webkit-keyframes fade {
-    from {opacity: 0.4;}
-    to {opacity:1;}
-}
-
+  
 @keyframes fade {
-    from {opacity: 0.4;}
-    to {opacity:1;}
+    from {opacity: .4}
+    to {opacity: 1}
 }
 /****end slideshow****/
 
@@ -510,6 +541,10 @@ a.animate {
 #highlight_row.row, #skills_row.row, #contact_row.row {
     display:flex;
     overflow:auto;
+}
+
+#slideshow_row.row {
+    display:flex;
 }
 
 #highlight_column.column, #skills_column.column, #contact_column.column {
