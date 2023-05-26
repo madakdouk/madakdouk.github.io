@@ -9,9 +9,17 @@ function myFunction() {
   }
 
 document.querySelector('.stackobot_link').addEventListener('click', function(event) {
-if (event.target.tagName === 'A') {
-    window.open.href = event.target.href;
-} else {
-    window.location.href = 'stackobot.html';
-}
-});
+    if (event.target.tagName === 'A') {
+        window.open.href = event.target.href;
+    } else {
+        window.location.href = 'stackobot.html';
+    }
+    });
+
+document.querySelector('.pong_link').addEventListener('click', function(event) {
+    if (event.target.tagName === 'A') {
+        window.open.href = event.target.href;
+    } else {
+        window.location.href = 'pong.html';
+    }
+    });
