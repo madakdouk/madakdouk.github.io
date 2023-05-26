@@ -361,6 +361,10 @@ a.animate {
     height:100%;
 }
 
+.mazev2_bg {
+    padding-bottom:2vw;
+}
+
 #pdf_bg.bgtext {
     height:150vh;
 }
