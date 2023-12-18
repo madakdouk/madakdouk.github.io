@@ -21,8 +21,4 @@ function addLinkListener(className, url) {
   }
 }
 
-addLinkListener('stackobot_link', 'stackobot.html');
-addLinkListener('pong_link', 'pong.html');
-addLinkListener('mazev2_link', 'mazev2.html');
-addLinkListener('mazev1_link', 'mazev1.html');
-addLinkListener('swordsshovels_link', 'swordsshovels.html');
+addLinkListener('spaceshooter_link', 'spaceshooter.html');
